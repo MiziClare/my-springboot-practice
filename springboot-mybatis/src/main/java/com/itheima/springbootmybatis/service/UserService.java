@@ -6,9 +6,17 @@ import java.util.List;
 
 public interface UserService {
 
-    public User findById(Integer id);
+    User findById(Integer id);
 
-    public List<User> findAll();
+    List<User> findAll();
 
-    public List<String> findAllNames();
+    List<String> findAllNames();
+
+    int insert(User user);
+
+    int update(User user);
+
+    int deleteById(Integer id);
+
+    List<User> findByNameLike(String name);
 }

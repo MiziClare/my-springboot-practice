@@ -1,0 +1,53 @@
+### 测试 hello 接口
+GET http://localhost:8080/hello
+
+###
+
+### 按 ID 查询用户
+GET http://localhost:8080/findById?id=3
+
+###
+
+### 查询所有用户
+GET http://localhost:8080/findAll
+
+###
+
+### 查询所有用户名
+GET http://localhost:8080/findAllNames
+
+###
+
+### 新增用户
+POST http://localhost:8080/insert
+Content-Type: application/json
+
+{
+  "id": 7,
+  "name": "Yuyao",
+  "age": 22,
+  "gender": "1",
+  "phone": "12345678901"
+}
+
+###
+
+### 更新用户
+PUT http://localhost:8080/update
+Content-Type: application/json
+
+{
+  "id": 7,
+  "name": "Yuyao Jiang",
+  "age": 22
+}
+
+###
+
+### 删除用户
+DELETE http://localhost:8080/deleteById?id=8
+
+###
+
+### 模糊查询用户
+GET http://localhost:8080/findByNameLike?name=a
