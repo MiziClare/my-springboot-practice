@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springboot-register" />
         <module name="springboot-starter" />
       </profile>
       <profile name="Annotation profile for springboot-mybatis" enabled="true">
@@ -17,7 +18,6 @@
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.40/lombok-1.18.40.jar" />
         </processorPath>
         <module name="springboot-mybatis (1)" />
-        <module name="springboot-mybatis" />
       </profile>
     </annotationProcessing>
   </component>
@@ -25,6 +25,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot-mybatis (1)" options="-parameters" />
+      <module name="springboot-register" options="-parameters" />
       <module name="springboot-starter" options="-parameters" />
     </option>
   </component>
